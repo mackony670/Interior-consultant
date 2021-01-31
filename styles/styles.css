@@ -13,7 +13,6 @@ body {
 .header-main {
     position: relative;
     display: flex;
-    /* border: 1px solid white; */
     justify-content: space-between;
     align-items: center;
 }
@@ -47,7 +46,7 @@ body {
     margin: 3px;
     background-color: white;
     Height: 3px;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .toggle-active .togle_line:nth-child(1) {
@@ -77,7 +76,7 @@ body {
     z-index: 50;
     display: flex;
     position: absolute;
-    transition: all .5s ease;
+    transition: transform .5s ease;
     left: -10px;
     transform: translateY(-100%);
 }
@@ -246,7 +245,6 @@ body {
     .main-section {
         display: flex;
     }
-    .main-section_box1 {}
     .main-section_box2 {
         position: relative;
     }
@@ -256,7 +254,7 @@ body {
     }
     .main-footer {
         position: fixed;
-        bottom: 20px;
+        bottom: 10px;
     }
     hr {
         display: none;

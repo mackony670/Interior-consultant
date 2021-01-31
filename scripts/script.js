@@ -4,6 +4,8 @@ const navDisplayed = document.getElementById("nav_list")
 
 const bodyBlock = document.getElementById("toblock")
 
+
+
 const activeTogle = () => {
   'use strict';
   showNav.classList.toggle('toggle-active');
@@ -12,20 +14,13 @@ const activeTogle = () => {
 }
 
 menu.addEventListener('click',
-  activeTogle,
+  activeTogle
 );
 
 
-navDisplayed.addEventListener('click', (e) => {
-  if (e.target.textContent === "Home") {
-    // console.log(e.target.textContent)
-  } else if (e.target.textContent === "Collection") {
-    console.log('aded')
-  } else if (e.target.textContent === "About") {
-    console.log('aded')
-  } else if (e.target.textContent === "Contac") {
-    console.log('aded')
-  } else {
+navDisplayed.addEventListener('click', (e) => {  
+  if (e.target.classList[0] != 'header-main__link') {
+    // console.log(e.target.textContent)  
     activeTogle()
   }
 
